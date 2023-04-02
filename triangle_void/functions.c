@@ -27,7 +27,10 @@ void    triangle(int base)
             for (int j = base - i; j < base; j++)
                 printf("  ");
         }
-        printf("\\");
+        if (i == base - 1)
+            printf("\\");
+        else
+            printf("\\");
         printf("\n");
     }
 }
