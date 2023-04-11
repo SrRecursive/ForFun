@@ -7,6 +7,7 @@ int main(int argc, char **argv)
     if (argc == 1)
     {
         printf("Introduce la base: ");
+<<<<<<< HEAD
         if(scanf("%d", &size) == 1)
         {
             printf("Este programa te hace un triangulo de base %d\n", size);
@@ -16,6 +17,11 @@ int main(int argc, char **argv)
         {
             printf("Base invalida");
         }
+=======
+        scanf("%d", &size);
+        printf("Este programa te hace un triangulo de altura %d\n", size);
+        triangle(size);
+>>>>>>> 3f6917841faf0e1fded38950368bb6ce8f95a0e9
     }
     else
     {
@@ -25,7 +31,7 @@ int main(int argc, char **argv)
             printf("Base invalida");
             return (0);
         }
-        printf("Este programa te hace un triangulo de base %d\n", size);
+        printf("Este programa te hace un triangulo de altura %d\n", size);
         triangle(size);
     }
     return (0);
