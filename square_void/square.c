@@ -7,9 +7,15 @@ int main(int argc, char **argv)
     if (argc == 1)
     {
         printf("Introduce la base: ");
-        scanf("%d", &size);
-        printf("Este programa te hace un cuadrado de base %d\n", size);
-        square(size);
+        if(scanf("%d", &size) == 1)
+        {
+            printf("Este programa te hace un cuadrado de base %d\n", size);
+            square(size);
+        }
+        else
+        {
+            printf("Base invalida");
+        }
     }
     else
     {
