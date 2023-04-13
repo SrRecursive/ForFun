@@ -1,7 +1,8 @@
 # ForFun
 This is a recopilation of programs I do for fun
 
-## Table of Programs
+## Table of Projects
+### geometry
 |	Program																								|	Description																					|	
 |-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|	
 |	[square_asterisk](https://github.com/SrRecursive/ForFun/tree/main/geometry/square_asterisk)			|	Make a square with the following symbols: "*"												|
