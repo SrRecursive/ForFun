@@ -11,7 +11,7 @@ void	Error(char *typeError)
 
 void	hello(char *name, int age)
 {
-	printf("¡Hola %s! Tienes %d años\n", name, age);
+	printf("Hello %s! You are %d years old\n", name, age);
 }
 
 char	*giveName()
@@ -63,13 +63,13 @@ int	main(void)
 	char	*name;
 	int		age;
 
-	printf("¿Cómo te llamas?\n");
+	printf("What is your name?\n");
 	if ((name = giveName()) == NULL)
 	{
 		Error("name");
 		return (-1);
 	}
-	printf("¿Cuántos años tienes?\n");
+	printf("How old are you?\n");
 	if ((age = giveAge()) < 0)
 	{
 		Error("age");
