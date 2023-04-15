@@ -2,7 +2,11 @@
 This is a recopilation of programs I do for fun
 
 ## Table of Projects
-### geometry
+
+### C
+
+#### geometry
+
 |	Program																								|	Description																					|	
 |-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|	
 |	[square_asterisk](https://github.com/SrRecursive/ForFun/tree/main/geometry/square_asterisk)			|	Makes a square of requested size using the following symbols: "*"							|
