@@ -18,5 +18,5 @@ This is a recopilation of programs I do for fun
 
 |	Program																								|	Description																					|	
 |-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|	
-|	[square_asterisk](https://github.com/SrRecursive/ForFun/tree/main/C/hello/helloworld.c)				|	Says "Hello World!																			|
-|	[square_asterisk](https://github.com/SrRecursive/ForFun/tree/main/C/hello/nameage.c)				|	Input a name and an age and will it will say "Hello {name}! You are {age} years old			|
+|	[helloworld](https://github.com/SrRecursive/ForFun/tree/main/C/hello/helloworld.c)					|	Says "Hello World!																			|
+|	[nameage](https://github.com/SrRecursive/ForFun/tree/main/C/hello/nameage.c)						|	Input a name and an age and will it will say "Hello {name}! You are {age} years old			|
