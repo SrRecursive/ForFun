@@ -3,14 +3,15 @@
 int	main(int argc, char **argv)
 {
 	int	size;
-	int option;
+	int	option;
 	int	validOption;
 
 	displayMenu();
 	printf("Select an option: ");
 	if (scanf("%d", &option) == 1)
 	{
-		if ((validOption = choiceMessage(option)) == -1)
+		validOption = choiceMessage(option);
+		if (validOption == -1)
 		{
 			error("option");
 			return (-1);

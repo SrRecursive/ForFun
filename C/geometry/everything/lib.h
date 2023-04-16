@@ -3,11 +3,11 @@
 # include <stdio.h>
 
 int		aNumber(char *str);
-void	choice(int	validOption, int size);
+void	choice(int validOption, int size);
 int		choiceMessage(int option);
 void	error(char *str);
 int		ft_satoi(char *str);
-void	displayMenu();
+void	displayMenu(void);
 void	squareAsterisk(int base);
 void	squareVoid(int base);
 void	triangleAsterisk(int base);
