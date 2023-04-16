@@ -7,10 +7,10 @@ void	displayMenu(void)
 	printf("|         GEOMETRY         |\n");
 	printf("|__________________________|\n");
 	printf("|                          |\n");
-	printf("| 1. asterisks square      |\n");
-	printf("| 2. void square           |\n");
-	printf("| 3. asterisks triangle    |\n");
-	printf("| 4. void triangle         |\n");
+	printf("| 1. filled square         |\n");
+	printf("| 2. unfilled square       |\n");
+	printf("| 3. filled triangle       |\n");
+	printf("| 4. unfilled triangle     |\n");
 	printf("| 5. Leave the program     |\n");
 	printf("|__________________________|\n");
 }
