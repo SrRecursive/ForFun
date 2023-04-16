@@ -36,7 +36,6 @@ int	choiceMessage(int option)
 			printf("Leaving the program...\n");
 		break;
 		default:
-			error("option");
 			return (-1);
 		break;
 	}
