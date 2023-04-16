@@ -47,16 +47,16 @@ void	choice(int validOption, int size)
 	switch (validOption)
 	{
 		case 1:
-			squareAsterisk(size);
+			squareFilled(size, fillSymbol());
 		break;
 		case 2:
-			squareVoid(size);
+			squareUnfilled(size);
 		break;
 		case 3:
-			triangleAsterisk(size);
+			triangleFilled(size, fillSymbol());
 		break;
 		case 4:
-			triangleVoid(size);
+			triangleUnfilled(size);
 		break;
 		default:
 		break;

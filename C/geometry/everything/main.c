@@ -7,10 +7,13 @@ int	main(int argc, char **argv)
 	int	validOption;
 	int flag;
 
-	flag = validNumber(argv[argc - argc + 1]);
-	if (flag == -1 || flag == 0)
+	if (argc == 2)
 	{
-		return (displayError("size"));
+		flag = validNumber(argv[argc - argc + 1]);
+		if (flag == -1 || flag == 0)
+		{
+			return (displayError("size"));
+		}
 	}
 	displayMenu();
 	printf("Select an option: ");

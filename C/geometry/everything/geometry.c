@@ -1,29 +1,36 @@
 #include "lib.h"
 
-void	squareAsterisk(int base)
+char	fillSymbol(void)
 {
-	printf("This program makes a square of size %d\n", base);
+	char symbol;
+	
+	printf("Introduce a symbol: ");
+	scanf(" %c", &symbol);
+	return (symbol);
+}
+void	squareFilled(int base, char fill)
+{
 	for (int i = 0; i < base; i++)
 	{
 		if (i > 0 && i < base - 1)
 		{
 			for (int k = 0; k < base; k++)
 			{
-				printf("* ");
+				printf("%c ", fill);
 			}
 		}
 		else
 		{
 			for (int j = 0; j < base; j++)
 			{
-				printf("* ");
+				printf("%c ", fill);
 			}
 		}
 		printf("\n");
 	}
 }
 
-void	squareVoid(int base)
+void	squareUnfilled(int base)
 {
 	for (int i = 0; i <= base; i++)
 	{
@@ -56,7 +63,7 @@ void	squareVoid(int base)
 	}
 }
 
-void	triangleAsterisk(int base)
+void	triangleFilled(int base, char fill)
 {
 	for (int i = 0; i < base; i++)
 	{
@@ -66,13 +73,13 @@ void	triangleAsterisk(int base)
 		}
 		for (int j = 0; j <= i; j++)
 		{
-			printf(" *");
+			printf(" %c", fill);
 		}
 		printf("\n");
 	}
 }
 
-void	triangleVoid(int base)
+void	triangleUnfilled(int base)
 {
 	for (int i = 0; i < base; i++)
 	{
