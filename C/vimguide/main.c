@@ -1,8 +1,15 @@
-# define ROJO "\033[5;33m"
 #include "libvim.h"
 
 int	main(void)
 {
-	// menu();
-	printf("%sTexto en amarillo\n", ROJO);
+	int	opt;
+	
+	while (opt != 4)
+	{
+		system("clear");
+		menu();
+		printf("%sSelect an option:%s ", WHITE, MAGENTA);
+		scanf("%d", &opt);
+		optselected(opt);
+	}
 }
