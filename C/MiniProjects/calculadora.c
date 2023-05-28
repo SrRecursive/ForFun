@@ -119,6 +119,7 @@ int	main(int argc, char *argv[])
 					if (scanf(" %d", &n[i]) == 0)
 					{
 						printf("%sError: %sNo es un número\n", MAGENTA, RESET);
+						free(n);
 						return (0);
 					}
 				}
@@ -137,6 +138,7 @@ int	main(int argc, char *argv[])
 					if (*endargv != '\0')
 					{
 						printf("%sError: %sNo es un número\n", MAGENTA, RESET);
+						free(n);
 						return (0);
 					}
 				}
@@ -186,5 +188,6 @@ int	main(int argc, char *argv[])
 			opcion = 0;
 		}while (opcion != 5);
 	}
+	free(n);
 	return (0);
 }
