@@ -1,25 +1,14 @@
 # ForFun
-This is a recopilation of programs I do for fun
 
-## Table of Projects
+Recopilación de cosas simples _(o no)_ que hago por pura diversión
+
+## Lenguajes
 
 ## C
 
-### geometry
+### MiniProyectos
 
-|	Program																								|	Description																					|	
-|-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|	
-|	[everything](https://github.com/SrRecursive/ForFun/tree/main/C/geometry/everything)					|	Makes everything below but in one folder and it is improved!								|
-|	[square_asterisk](https://github.com/SrRecursive/ForFun/tree/main/C/geometry/square_asterisk)		|	Makes a square of requested size using the following symbols: "*"							|
-|	[square_void](https://github.com/SrRecursive/ForFun/tree/main/C/geometry/square_void)				|	Makes a square of requested size using the following symbols: "_", "\|", " "				|
-|	[triangle_asterisk](https://github.com/SrRecursive/ForFun/tree/main/C/geometry/triangle_asterisk)	|	Makes a triangle of requested size using the following symbols: "*"							|
-|	[triangle_void](https://github.com/SrRecursive/ForFun/tree/main/C/geometry/triangle_void)			|	Makes a triangle of requested size using the following symbols: "/", "\\", "_", " "			|
-
-### hello
-
-|	Program																								|	Description																					|	
-|-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|	
-|	[helloworld](https://github.com/SrRecursive/ForFun/tree/main/C/hello/helloworld.c)					|	Says "Hello World!																			|
-|	[nameage](https://github.com/SrRecursive/ForFun/tree/main/C/hello/nameage.c)						|	Input a name and an age and will it will say "Hello {name}! You are {age} years old			|
-
-### vimguide
+|	Proyecto																					|	Descripción										|	Estado		|
+|-----------------------------------------------------------------------------------------------|---------------------------------------------------|:-------------:|
+|	[Hola Mundo](https://github.com/SrRecursive/ForFun/blob/main/C/MiniProjects/holamundo.c)	|	Imprime el mítico mensaje "Hola Mundo"			|	✅			|
+|	[Calculadora](https://github.com/SrRecursive/ForFun/blob/main/C/MiniProjects/calculadora.c)	|	Calculadora funcional. Utiliza números enteros.	|	✅			|
