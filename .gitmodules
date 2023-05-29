@@ -1,0 +1,3 @@
+[submodule "C/vimguide"]
+	path = C/vimguide
+	url = https://github.com/SrRecursive/vimguide
