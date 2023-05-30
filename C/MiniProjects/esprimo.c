@@ -54,7 +54,7 @@ int	obtener_divisores(int n)
 
 	divisor = 1;
 	n_divisores = 0;
-	while ((n / (divisor * divisor)) != 0)
+	while ((n / divisor) != 0)
 	{
 		if ((n % divisor) == 0)
 		{
