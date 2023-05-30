@@ -3,7 +3,6 @@
 #include "colores.h"
 
 int	obtener_divisores(int n);
-int	es_primo(int n);
 
 int	main(int argc, char **argv)
 {
