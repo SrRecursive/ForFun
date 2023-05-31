@@ -38,6 +38,11 @@ int	main(int argc, char **argv)
 				return (0);
 			}
 		}
+		if (n < 2)
+		{
+			printf("El número %d no es primo\n", n);
+			return (0);
+		}
 		printf("Introduce la cantidad de primos que quieres (0 si quieres todos): ");
 		if (scanf(" %d", &cantidad) == 0)
 		{
@@ -64,7 +69,7 @@ int	main(int argc, char **argv)
 			if (n )
 			n_aux++;
 		}
-		if (cantidad != 0 && contador < cantidad)
+		if (cantidad != 0 && contador <= cantidad)
 		{
 			printf("%sError: %sQuerías %d primos, pero el número %d solo tiene %d primos\n",
 					MAGENTA, RESET, cantidad, n, contador - 1);
