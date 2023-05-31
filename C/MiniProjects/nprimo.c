@@ -40,7 +40,7 @@ int	main(int argc, char **argv)
 		}
 		if (n < 2)
 		{
-			printf("El número %d no es primo\n", n);
+			printf("%sError: %sEl número %d no tiene primos\n", MAGENTA, RESET, n);
 			return (0);
 		}
 		printf("Introduce la cantidad de primos que quieres (0 si quieres todos): ");
