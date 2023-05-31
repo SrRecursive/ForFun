@@ -21,7 +21,7 @@ Recopilación de cosas simples _(o no)_ que hago por pura diversión
 
 |	Proyecto																					|	Descripción										|	Estado		|
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------|:-------------:|
-|	[Hola Mundo](https://github.com/SrRecursive/ForFun/blob/main/C++/MiniProjects/holamundo.c)	|	Imprime el mítico mensaje "Hola Mundo"			|	✅			|
+|	[Hola Mundo](https://github.com/SrRecursive/ForFun/blob/main/C++/MiniProjects/holamundo.cpp)	|	Imprime el mítico mensaje "Hola Mundo"			|	✅			|
 
 ## Python
 
@@ -29,4 +29,4 @@ Recopilación de cosas simples _(o no)_ que hago por pura diversión
 
 |	Proyecto																						|	Descripción										|	Estado		|
 |---------------------------------------------------------------------------------------------------|---------------------------------------------------|:-------------:|
-|	[Hola Mundo](https://github.com/SrRecursive/ForFun/blob/main/Python/MiniProjects/holamundo.c)	|	Imprime el mítico mensaje "Hola Mundo"			|	✅			|
+|	[Hola Mundo](https://github.com/SrRecursive/ForFun/blob/main/Python/MiniProjects/holamundo.py)	|	Imprime el mítico mensaje "Hola Mundo"			|	✅			|
