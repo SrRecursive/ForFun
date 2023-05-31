@@ -4,6 +4,7 @@ all:
 	holamundo, \
 	calculadora, \
 	esprimo, \
+	nprimo, \
 	clean, \
 	fclean \
 	\033[0m"
@@ -20,12 +21,16 @@ esprimo:
 	@gcc -Wall -Wextra -Werror esprimo.c -o esprimo
 	@echo "Para utilizar el programa: \033[1;33m./esprimo\033[0m"
 
+nprimo:
+	@gcc -Wall -Wextra -Werror nprimo.c -o nprimo
+	@echo "Para utilizar el programa: \033[1;33m./nprimo\033[0m"
+
 clean:
-	@rm -f holamundo calculadora esprimo
+	@rm -f holamundo calculadora esprimo nprimo
 
 fclean: clean
 	@clear
 
 re: clean all
 
-.PHONY: holamundo calculadora esprimo clean fclean re
+.PHONY: holamundo calculadora esprimo nprimo clean fclean re
