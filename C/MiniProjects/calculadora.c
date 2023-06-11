@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "colores.h"
+#define SUMA 1
+#define RESTA 2
+#define MULTIPLICACION 3
+#define DIVISION 4
 
 // Declarar prototipos de funciones
 void	mostrar_menu(void);
@@ -89,16 +93,16 @@ int	main(int argc, char **argv)
 				// Switch para utilizar la función correspondiente a la opción
 				switch (opcion)
 				{
-					case 1:
+					case SUMA:
 						resultado = suma(resultado, n[i + 1]);
 						break;
-					case 2:
+					case RESTA:
 						resultado = resta(resultado, n[i + 1]);
 						break;
-					case 3:
+					case MULTIPLICACION:
 						resultado = multiplicacion(resultado, n[i + 1]);
 						break;
-					case 4:
+					case DIVISION:
 						resultado = division(resultado, n[i + 1]);
 						break;
 				}
