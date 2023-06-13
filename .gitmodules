@@ -1,3 +1,6 @@
 [submodule "C/vimguide"]
 	path = C/vimguide
 	url = https://github.com/SrRecursive/vimguide
+[submodule "ansi-color-library"]
+	path = ansi-color-library
+	url = git@github.com:SrRecursive/ansi-color-library.git
