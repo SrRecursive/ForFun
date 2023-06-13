@@ -27,9 +27,9 @@ int	main(int argc, char **argv)
 	// Si introducen 1 argumento muestra un error
 	if (argc == 2)
 	{
-		printf("%sError: %sLa cantidad debe ser al menos 2\n", MAGENTA, RESET);
-		printf("%sUso con parámetros: %s <n1> <n2> ...\n%s", YELLOW, argv[0], RESET);
-		printf("%sUso sin parámetros: %s\n%s", YELLOW, argv[0], RESET);
+		printf("%sError: %sLa cantidad debe ser al menos 2\n", T_MAGENTA, RESET);
+		printf("%sUso con parámetros: %s <n1> <n2> ...\n%s", T_YELLOW, argv[0], RESET);
+		printf("%sUso sin parámetros: %s\n%s", T_YELLOW, argv[0], RESET);
 		return (0);
 	}
 	else
@@ -50,7 +50,7 @@ int	main(int argc, char **argv)
 				scanf(" %d", &cantidad);
 				if (cantidad < 2)
 				{
-					printf("%sError: %sLa cantidad debe ser al menos 2\n", MAGENTA, RESET);
+					printf("%sError: %sLa cantidad debe ser al menos 2\n", T_MAGENTA, RESET);
 					return (0);
 				}
 				
@@ -60,7 +60,7 @@ int	main(int argc, char **argv)
 				// Comprobación de que se asigna correctamente la memoria
 				if (n == NULL)
 				{
-					printf("%sError: %sLa asignación de memoria ha fallado, saliendo del programa...\n", MAGENTA, RESET);
+					printf("%sError: %sLa asignación de memoria ha fallado, saliendo del programa...\n", T_MAGENTA, RESET);
 					return (0);
 				}
 				printf("Introduce los números: ");
@@ -74,7 +74,7 @@ int	main(int argc, char **argv)
 				// Comprobación de que se asigna correctamente la memoria
 				if (n == NULL)
 				{
-					printf("%sError: %sLa asignación de memoria ha fallado, saliendo del programa...\n", MAGENTA, RESET);
+					printf("%sError: %sLa asignación de memoria ha fallado, saliendo del programa...\n", T_MAGENTA, RESET);
 					return (0);
 				}
 				n = obtener_numeros(n, cantidad, argc, argv);
@@ -86,7 +86,7 @@ int	main(int argc, char **argv)
 			{
 				if (opcion == 4 && n[i + 1] == 0)
 				{
-					printf("%sError: No puedo dividir entre 0\n%s", MAGENTA, RESET);
+					printf("%sError: No puedo dividir entre 0\n%s", T_MAGENTA, RESET);
 					flag = 1;
 					break;
 				}
@@ -126,17 +126,17 @@ int	main(int argc, char **argv)
 // Inicializar funciones
 void	mostrar_menu(void)
 {
-	printf("%s*************************************\n", CIAN);
+	printf("%s*************************************\n", T_CYAN);
 	printf("*                                   *\n");
-	printf("*           %sCalculadora             %s*\n", YELLOW, CIAN);
+	printf("*           %sCalculadora             %s*\n", T_YELLOW, T_CYAN);
 	printf("*                                   *\n");
 	printf("*************************************\n");
 	printf("*                                   *\n");
-	printf("*   %s1. %sSuma                         %s*\n", MAGENTA, YELLOW, CIAN);
-	printf("*   %s2. %sResta                        %s*\n", MAGENTA, YELLOW, CIAN);
-	printf("*   %s3. %sMultiplicación               %s*\n", MAGENTA, YELLOW, CIAN);
-	printf("*   %s4. %sDivisión                     %s*\n", MAGENTA, YELLOW, CIAN);
-	printf("*   %s5. %sSalir                        %s*\n", MAGENTA, YELLOW, CIAN);
+	printf("*   %s1. %sSuma                         %s*\n", T_MAGENTA, T_YELLOW, T_CYAN);
+	printf("*   %s2. %sResta                        %s*\n", T_MAGENTA, T_YELLOW, T_CYAN);
+	printf("*   %s3. %sMultiplicación               %s*\n", T_MAGENTA, T_YELLOW, T_CYAN);
+	printf("*   %s4. %sDivisión                     %s*\n", T_MAGENTA, T_YELLOW, T_CYAN);
+	printf("*   %s5. %sSalir                        %s*\n", T_MAGENTA, T_YELLOW, T_CYAN);
 	printf("*                                   *\n");
 	printf("*************************************%s\n", RESET);
 }
@@ -189,7 +189,7 @@ int opcion_valida(int opcion)
 		printf("Elige una opción: ");
 		if (scanf(" %d", &opcion) == 0)
 		{
-			printf("%sError: %sNo es un número\n", MAGENTA, RESET);
+			printf("%sError: %sNo es un número\n", T_MAGENTA, RESET);
 			return (0);
 		}
 		if (opcion == 5)
@@ -199,7 +199,7 @@ int opcion_valida(int opcion)
 		}
 		else if (opcion < 1 || opcion > 5)
 		{
-			printf("%sError: %sOpción inválida, inténtelo de nuevo\n", MAGENTA, RESET);
+			printf("%sError: %sOpción inválida, inténtelo de nuevo\n", T_MAGENTA, RESET);
 		}
 	}
 	return (opcion);
@@ -214,7 +214,7 @@ int	*obtener_numeros(int *n, int cantidad, int argc, char **argv)
 		{
 			if (scanf(" %d", &n[i]) == 0)
 			{
-				printf("%sError: %sNo es un número\n", MAGENTA, RESET);
+				printf("%sError: %sNo es un número\n", T_MAGENTA, RESET);
 				free(n);
 				return (0);
 			}
@@ -227,7 +227,7 @@ int	*obtener_numeros(int *n, int cantidad, int argc, char **argv)
 			// Si hay un error libera la memoria asignada y sale del programa
 			if (*endargv != '\0')
 			{
-				printf("%sError: %sNo es un número\n", MAGENTA, RESET);
+				printf("%sError: %sNo es un número\n", T_MAGENTA, RESET);
 				free(n);
 				return (0);
 			}
