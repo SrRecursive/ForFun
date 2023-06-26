@@ -57,13 +57,16 @@ nprimo:
 semaforo:
 	@gcc -Wall -Wextra -Werror semaforo.c -o semaforo
 	@echo "Para utilizar el programa: $(T_YELLOW)$(BOLD)./semaforo$(RESET)"
+biblioteca:
+	@gcc -Wall -Wextra -Werror biblioteca.c -o biblioteca
+	@echo "Para utilizar el programa: $(T_YELLOW)$(BOLD)./biblioteca$(RESET)"
 
 clean:
-	@rm -f holamundo calculadora esprimo nprimo semaforo
+	@rm -f holamundo calculadora esprimo nprimo semaforo biblioteca
 
 fclean: clean
 	@clear
 
 re: clean all
 
-.PHONY: holamundo calculadora esprimo nprimo semaforo clean fclean re
+.PHONY: holamundo calculadora esprimo nprimo semaforo biblioteca clean fclean re
