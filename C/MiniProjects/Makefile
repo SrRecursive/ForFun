@@ -34,6 +34,9 @@ all:
 	calculadora, \
 	esprimo, \
 	nprimo, \
+	semaforo, \
+	biblioteca, \
+	rubik, \
 	clean, \
 	fclean \
 	\033[0m"
@@ -61,12 +64,16 @@ biblioteca:
 	@gcc -Wall -Wextra -Werror biblioteca.c -o biblioteca
 	@echo "Para utilizar el programa: $(T_YELLOW)$(BOLD)./biblioteca$(RESET)"
 
+rubik:
+	@gcc -Wall -Wextra -Werror rubik.c -o rubik
+	@echo "Para utilizar el programa: $(T_YELLOW)$(BOLD)./rubik$(RESET)"
+
 clean:
-	@rm -f holamundo calculadora esprimo nprimo semaforo biblioteca
+	@rm -f holamundo calculadora esprimo nprimo semaforo biblioteca rubik
 
 fclean: clean
 	@clear
 
 re: clean all
 
-.PHONY: holamundo calculadora esprimo nprimo semaforo biblioteca clean fclean re
+.PHONY: holamundo calculadora esprimo nprimo semaforo biblioteca rubik clean fclean re
